@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+input,
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999;
+}
+.bg-green {
+  background-image: linear-gradient(to right, rgba(0, 229, 145, 1), rgba(47, 239, 188, 1));
+}
+
+.header {
+  color: #fff;
+  padding: 10px;
+}
+.main-title {
+  font-weight: 400;
+}
+.box-wrap {
+  width: 800px;
+  height: 300px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.box-a {
+  flex-basis: 40%;
+}
+.box-b {
+  flex-basis: 58%;
+}
+.box {
+  border: 1px solid #d3d3d3;
+  overflow: auto;
+}
+.box-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 6px;
+}
+.item {
+  display: flex;
+  position: relative;
+}
+.item input[type='checkbox'] {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.item-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px 25px;
+  color: #999;
+}
+.item-input:focus {
+  color: #000000;
+}
+.item-input[data-completed='true'] {
+  text-decoration: line-through;
+}
+
+.submit {
+  display: none;
+}
+.details-form {
+  padding: 0 5px;
+}
+.details-form label {
+  display: block;
+  color: #000;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.details-form input,
+.details-form textarea {
+  width: 100%;
+  padding: 5px;
+}
+.delete-item {
+  color: red;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1;
+}
